@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+
+	<title>GUI Sandbox</title>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<style>
+	.inline-buttons .form-group {
+		display:inline-block;
+	}
+</style>
+</head>
+
+<body>
+	{snippet flashes}
+		<div class="flash slide alert alert-{$flash->type}" n:foreach="$flashes as $flash">
+			<div class="container">
+				{$flash->message}
+			</div>
+		</div>
+	{/snippet}
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container collapse navbar-collapse" id="navbarNavAltMarkup">
+			<ul class="navbar-nav">
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						contributte/forms-bootstrap
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" n:href=":FormsBootstrap:Homepage:default mode => 0">Vertical rendering</a>
+						<a class="dropdown-item" n:href=":FormsBootstrap:Homepage:default mode => 1">Side by side rendering</a>
+						<a class="dropdown-item" n:href=":FormsBootstrap:Homepage:default mode => 2">Inline rendering</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" n:href=":FormsWizard:Homepage:default">contributte/forms-wizard</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" n:href=":LiveFormValidation:Homepage:default">contributte/live-form-validation</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						contributte/recaptcha examples
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" n:href=":Recaptcha:Homepage:default">Default reCAPTCHA</a>
+						<a class="dropdown-item" n:href=":Recaptcha:Homepage:hiddenElement">Hidden element</a>
+						<a class="dropdown-item" n:href=":Recaptcha:Homepage:invisible">Invisible</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="card" style="margin-top:20px;">
+			{include content}
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.js"></script>
+	{block scripts}{/block}
+</body>
+</html>

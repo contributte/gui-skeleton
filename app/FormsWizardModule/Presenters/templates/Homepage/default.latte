@@ -1,0 +1,30 @@
+{block content}
+	<div class="card-header">
+		Form wizard example
+	</div>
+	<div class="card-body">
+		<div n:wizard="wizard">
+			<ul n:if="!$wizard->isSuccess()">
+				<li n:foreach="$wizard->steps as $step" n:class="$wizard->isDisabled($step) ? disabled, $wizard->isActive($step) ? active">
+					<a n:tag-if="$wizard->useLink($step)" n:href="changeStep! $step">{$step} - {$wizard->getStepData($step)['name']}</a>
+				</li>
+			</ul>
+
+			{step 1}
+				{control $form}
+			{/step}
+
+			{step 2}
+				{control $form}
+			{/step}
+
+			{step 3}
+				{control $form}
+			{/step}
+
+			{step success}
+				Registration was successful
+			{/step}
+		</div>
+	</div>
+{/block}

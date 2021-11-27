@@ -1,18 +1,18 @@
 {
+  "name": "contributte/gui-skeleton",
+  "description": "GUI skeleton is full featured web app kit based on Nette Framework + Contributte and many useful packages by @f3l1x.",
+  "keywords": [
+    "php",
+    "nette",
+    "contributte",
+    "sandbox",
+    "project",
+    "skeleton"
+  ],
+  "license": "MIT",
+  "type": "project",
   "require": {
     "php": ">=7.1",
-    "nette/application": "^3.0",
-    "nette/bootstrap": "^3.0",
-    "nette/caching": "^3.0",
-    "nette/di": "^3.0",
-    "nette/finder": "^2.5",
-    "nette/forms": "^3.0",
-    "nette/http": "^3.0",
-    "nette/mail": "^3.0",
-    "nette/security": "^3.0",
-    "nette/utils": "^3.0",
-    "latte/latte": "^2.5",
-    "tracy/tracy": "^2.6",
     "contributte/application": "^0.5",
     "contributte/bootstrap": "^0.5",
     "contributte/cache": "^0.6",
@@ -30,10 +30,8 @@
   "require-dev": {
     "ninjify/qa": "^0.12",
     "phpstan/phpstan": "^1.0",
-    "phpstan/phpstan-doctrine": "^1.0",
     "phpstan/phpstan-deprecation-rules": "^1.0",
     "phpstan/phpstan-nette": "^1.0",
-    "phpstan/phpstan-phpunit": "^1.0",
     "phpstan/phpstan-strict-rules": "^1.0"
   },
   "autoload": {

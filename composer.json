@@ -1,6 +1,6 @@
 {
   "name": "contributte/gui-skeleton",
-  "description": "GUI skeleton is full featured web app kit based on Nette Framework + Contributte and many useful packages by @f3l1x.",
+  "description": "GUI project skeleton based on Nette Framework (@nette) and Contributte (@contributte) libraries by @f3l1x.",
   "keywords": [
     "php",
     "nette",
@@ -11,8 +11,13 @@
   ],
   "license": "MIT",
   "type": "project",
+  "authors": [
+    {
+      "name": "Petr Parolek"
+    }
+  ],
   "require": {
-    "php": ">=7.1",
+    "php": ">=8.0",
     "contributte/application": "^0.5",
     "contributte/bootstrap": "^0.5",
     "contributte/cache": "^0.6",

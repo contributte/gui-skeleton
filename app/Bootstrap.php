@@ -1,19 +1,19 @@
 <?php
 
-declare(strict_types=1);
+declare(strict_types = 1);
 
 namespace App;
 
-use Nette\Configurator;
-
+use Contributte\Bootstrap\ExtraConfigurator;
 
 class Bootstrap
 {
-	public static function boot(): Configurator
-	{
-		$configurator = new Configurator;
 
-		$configurator->setDebugMode(true);
+	public static function boot(): ExtraConfigurator
+	{
+		$configurator = new ExtraConfigurator();
+
+		$configurator->setEnvDebugMode();
 		$configurator->enableTracy(__DIR__ . '/../var/log');
 
 		$configurator->setTimeZone('Europe/Prague');
@@ -23,9 +23,9 @@ class Bootstrap
 			->addDirectory(__DIR__)
 			->register();
 
-		$configurator
-			->addConfig(__DIR__ . '/../config/config.neon');
+		$configurator->addConfig(__DIR__ . '/../config/config.neon');
 
 		return $configurator;
 	}
+
 }

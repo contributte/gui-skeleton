@@ -2,16 +2,10 @@ version: '3.3'
 
 services:
   web:
-    image: contributte_playground
-    build: .docker
+    image: dockette/web:php-80
     volumes:
       - ./:/srv
     ports:
       - 80:80
-
-  composer:
-    image: composer:latest
-    volumes:
-      - ./:/app
-    working_dir: /app
-    command: composer install --ignore-platform-reqs
+    environment:
+      - NETTE_DEBUG=1

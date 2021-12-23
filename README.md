@@ -24,7 +24,7 @@ Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact �
 
 -----
 
-This project is here for super-simple demonstration how to create a project with `contributte/datagrid`. People are mailing me "This thing is broken - can you fix it please?" and I am responding: "Sure. Please create a sandbox-like repository where I can reproduce you issue and I will have a look at it". Well that's the purpose of this repository. I prepared you a database, presenter and a template. Use it. 🙌
+This is project skeleton for all kind of GUI components for Nette Framework and Contributte family.
 
 ## Demo
 
@@ -40,19 +40,19 @@ composer create-project -s dev contributte/gui-skeleton acme
 
 ### Install using [docker](https://github.com/docker/docker/)
 
-1) At first, use GIT to download this project.
+1) At first, clone this repository.
 
    ```
    git clone https://github.com/contributte/gui-skeleton.git
    ```
 
-2) Run command:
+2) Run docker via docker compose.
 
    ```
    docker-compose up
    ```
 
-3) Open http://localhost and enjoy!
+3) Open http://0.0.0.0:8000 and enjoy!
 
 If you need enter into container (such as `composer update`) run command `docker-compose run web bash`.
 

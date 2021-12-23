@@ -1,3 +1,7 @@
+includes:
+	- vendor/phpstan/phpstan-nette/extension.neon
+	- vendor/phpstan/phpstan-nette/rules.neon
+
 parameters:
 	level: 9
 
@@ -11,6 +15,3 @@ parameters:
 		- '#Call to an undefined method Nette\\Application\\UI\\Form::addReCaptcha\(\)#'
 		- '#Call to an undefined method Nette\\Application\\UI\\Form::addInvisibleReCaptcha\(\)#'
 
-includes:
-	- vendor/phpstan/phpstan-nette/extension.neon
-	- vendor/phpstan/phpstan-nette/rules.neon

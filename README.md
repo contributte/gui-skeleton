@@ -32,7 +32,7 @@ https://examples.contributte.org/gui-skeleton/
 
 ## Installation
 
-To install latest version of `contributte/gui-skeleton` use [Composer](https://getcomposer.com).
+To install latest version of `contributte/gui-skeleton` use [Composer](https://getcomposer.org).
 
 ```
 composer create-project -s dev contributte/gui-skeleton acme

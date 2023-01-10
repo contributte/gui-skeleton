@@ -367,21 +367,21 @@
         },
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "86f5395836e601dd2d16a7129ec922c4b1179208"
+                "reference": "818652121edcf369cc0ff7049e3fa07f0aca7dfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/86f5395836e601dd2d16a7129ec922c4b1179208",
-                "reference": "86f5395836e601dd2d16a7129ec922c4b1179208",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/818652121edcf369cc0ff7049e3fa07f0aca7dfd",
+                "reference": "818652121edcf369cc0ff7049e3fa07f0aca7dfd",
                 "shasum": ""
             },
             "require": {
                 "nette/application": "^3.0",
-                "nette/forms": "3.1.8",
+                "nette/forms": "3.1.9",
                 "php": ">=7.2"
             },
             "require-dev": {
@@ -423,7 +423,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/forms-bootstrap/issues",
-                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.5.4"
+                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.5.5"
             },
             "funding": [
                 {
@@ -435,7 +435,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-12-14T15:12:18+00:00"
+            "time": "2023-01-10T09:47:57+00:00"
         },
         {
             "name": "contributte/forms-wizard",
@@ -1483,22 +1483,22 @@
         },
         {
             "name": "nette/forms",
-            "version": "v3.1.8",
+            "version": "v3.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "c2b6b11703af2c6f3cbe4e16472b942eea8efe35"
+                "reference": "1f93a00346e53a8dbf74c21b413038ce70052738"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/c2b6b11703af2c6f3cbe4e16472b942eea8efe35",
-                "reference": "c2b6b11703af2c6f3cbe4e16472b942eea8efe35",
+                "url": "https://api.github.com/repos/nette/forms/zipball/1f93a00346e53a8dbf74c21b413038ce70052738",
+                "reference": "1f93a00346e53a8dbf74c21b413038ce70052738",
                 "shasum": ""
             },
             "require": {
                 "nette/component-model": "^3.0",
                 "nette/http": "^3.1",
-                "nette/utils": "^3.2.1",
+                "nette/utils": "^3.2.1 || ~4.0.0",
                 "php": ">=7.2 <8.3"
             },
             "conflict": {
@@ -1551,9 +1551,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/forms/issues",
-                "source": "https://github.com/nette/forms/tree/v3.1.8"
+                "source": "https://github.com/nette/forms/tree/v3.1.9"
             },
-            "time": "2022-10-13T01:29:45+00:00"
+            "time": "2023-01-09T20:18:22+00:00"
         },
         {
             "name": "nette/http",

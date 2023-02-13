@@ -290,16 +290,16 @@
         },
         {
             "name": "contributte/forms",
-            "version": "v0.5.0",
+            "version": "v0.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms.git",
-                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779"
+                "reference": "c7ac26b456ff2958ea207c43be6515ad1154dcea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms/zipball/995d5349b3b6233808a4abc9e4324d78192e3779",
-                "reference": "995d5349b3b6233808a4abc9e4324d78192e3779",
+                "url": "https://api.github.com/repos/contributte/forms/zipball/c7ac26b456ff2958ea207c43be6515ad1154dcea",
+                "reference": "c7ac26b456ff2958ea207c43be6515ad1154dcea",
                 "shasum": ""
             },
             "require": {
@@ -311,13 +311,13 @@
             },
             "require-dev": {
                 "nette/application": "^3.0.0",
-                "nette/di": "^3.0.0",
+                "nette/di": "^3.1.0",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.1"
             },
             "suggest": {
                 "nette/di": "to use FormFactoryExtension[CompilerExtension]"
@@ -356,9 +356,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/forms/issues",
-                "source": "https://github.com/contributte/forms/tree/v0.5.0"
+                "source": "https://github.com/contributte/forms/tree/v0.5.1"
             },
-            "time": "2020-12-14T17:46:11+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-11-13T17:22:04+00:00"
         },
         {
             "name": "contributte/forms-bootstrap",
@@ -1274,20 +1284,20 @@
         },
         {
             "name": "nette/component-model",
-            "version": "v3.0.2",
+            "version": "v3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/component-model.git",
-                "reference": "20a39df12009029c7e425bc5e0439ee4ab5304af"
+                "reference": "9d97c0e1916bbf8e306283ab187834501fd4b1f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/component-model/zipball/20a39df12009029c7e425bc5e0439ee4ab5304af",
-                "reference": "20a39df12009029c7e425bc5e0439ee4ab5304af",
+                "url": "https://api.github.com/repos/nette/component-model/zipball/9d97c0e1916bbf8e306283ab187834501fd4b1f5",
+                "reference": "9d97c0e1916bbf8e306283ab187834501fd4b1f5",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^2.5 || ^3.0",
+                "nette/utils": "^2.5 || ^3.0 || ~4.0.0",
                 "php": ">=7.1"
             },
             "require-dev": {
@@ -1330,9 +1340,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/component-model/issues",
-                "source": "https://github.com/nette/component-model/tree/v3.0.2"
+                "source": "https://github.com/nette/component-model/tree/v3.0.3"
             },
-            "time": "2021-08-25T14:52:12+00:00"
+            "time": "2023-01-09T20:16:05+00:00"
         },
         {
             "name": "nette/di",
@@ -1482,18 +1492,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "1f93a00346e53a8dbf74c21b413038ce70052738"
+                "reference": "a116e5482c2ae2268393f647438b38725f4a7cfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/1f93a00346e53a8dbf74c21b413038ce70052738",
-                "reference": "1f93a00346e53a8dbf74c21b413038ce70052738",
+                "url": "https://api.github.com/repos/nette/forms/zipball/a116e5482c2ae2268393f647438b38725f4a7cfd",
+                "reference": "a116e5482c2ae2268393f647438b38725f4a7cfd",
                 "shasum": ""
             },
             "require": {
                 "nette/component-model": "^3.0",
                 "nette/http": "^3.1",
-                "nette/utils": "^3.2.1 || ~4.0.0",
+                "nette/utils": "^3.2.1",
                 "php": ">=7.2 <8.3"
             },
             "conflict": {
@@ -1548,7 +1558,7 @@
                 "issues": "https://github.com/nette/forms/issues",
                 "source": "https://github.com/nette/forms/tree/v3.1.9"
             },
-            "time": "2023-01-09T20:18:22+00:00"
+            "time": "2022-12-27T03:41:48+00:00"
         },
         {
             "name": "nette/http",
@@ -2027,16 +2037,16 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.8",
+            "version": "v3.2.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368"
+                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
-                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
+                "url": "https://api.github.com/repos/nette/utils/zipball/c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
+                "reference": "c91bac3470c34b2ecd5400f6e6fdf0b64a836a5c",
                 "shasum": ""
             },
             "require": {
@@ -2046,6 +2056,7 @@
                 "nette/di": "<3.0.6"
             },
             "require-dev": {
+                "jetbrains/phpstorm-attributes": "dev-master",
                 "nette/tester": "~2.0",
                 "phpstan/phpstan": "^1.0",
                 "tracy/tracy": "^2.3"
@@ -2106,9 +2117,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.8"
+                "source": "https://github.com/nette/utils/tree/v3.2.9"
             },
-            "time": "2022-09-12T23:36:20+00:00"
+            "time": "2023-01-18T03:26:20+00:00"
         },
         {
             "name": "tracy/tracy",

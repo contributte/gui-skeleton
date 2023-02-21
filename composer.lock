@@ -672,31 +672,31 @@
         },
         {
             "name": "contributte/recaptcha",
-            "version": "v3.4.1",
+            "version": "v3.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/reCAPTCHA.git",
-                "reference": "aaafd81ae7ef795657a6db52a15e93d3ee9a9a40"
+                "reference": "750f36dbb6e1013f9d7bb02151cadd1a200c3b74"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/reCAPTCHA/zipball/aaafd81ae7ef795657a6db52a15e93d3ee9a9a40",
-                "reference": "aaafd81ae7ef795657a6db52a15e93d3ee9a9a40",
+                "url": "https://api.github.com/repos/contributte/reCAPTCHA/zipball/750f36dbb6e1013f9d7bb02151cadd1a200c3b74",
+                "reference": "750f36dbb6e1013f9d7bb02151cadd1a200c3b74",
                 "shasum": ""
             },
             "require": {
                 "contributte/di": "^0.5.1",
                 "nette/forms": "^3.0.0",
-                "nette/utils": "^3.0.0",
+                "nette/utils": "^3.0.0 || ^4.0",
                 "php": ">=7.2"
             },
             "require-dev": {
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.12",
-                "phpstan/phpstan": "^0.12",
-                "phpstan/phpstan-deprecation-rules": "^0.12",
-                "phpstan/phpstan-nette": "^0.12",
-                "phpstan/phpstan-strict-rules": "^0.12"
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-nette": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0"
             },
             "suggest": {
                 "ext-openssl": "To make requests via https"
@@ -733,9 +733,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/reCAPTCHA/issues",
-                "source": "https://github.com/contributte/reCAPTCHA/tree/v3.4.1"
+                "source": "https://github.com/contributte/reCAPTCHA/tree/v3.5.0"
             },
-            "time": "2021-02-06T17:15:30+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-02-20T19:05:31+00:00"
         },
         {
             "name": "contributte/security",
@@ -1346,34 +1356,31 @@
         },
         {
             "name": "nette/di",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/di.git",
-                "reference": "046f89cc334ec08b6b2e04803bce011bbe6522f1"
+                "reference": "4799ee684453bf5e70df1e87bec80bfbfc0e7d13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/di/zipball/046f89cc334ec08b6b2e04803bce011bbe6522f1",
-                "reference": "046f89cc334ec08b6b2e04803bce011bbe6522f1",
+                "url": "https://api.github.com/repos/nette/di/zipball/4799ee684453bf5e70df1e87bec80bfbfc0e7d13",
+                "reference": "4799ee684453bf5e70df1e87bec80bfbfc0e7d13",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
                 "nette/neon": "^3.3 || ^4.0",
                 "nette/php-generator": "^3.5.4 || ^4.0",
-                "nette/robot-loader": "^3.2",
-                "nette/schema": "^1.1",
-                "nette/utils": "^3.2.5",
+                "nette/robot-loader": "^3.2 || ~4.0.0",
+                "nette/schema": "^1.2",
+                "nette/utils": "^3.2.5 || ~4.0.0",
                 "php": ">=7.2 <8.3"
             },
-            "conflict": {
-                "nette/bootstrap": "<3.0"
-            },
             "require-dev": {
-                "nette/tester": "^2.2",
-                "phpstan/phpstan": "^0.12",
-                "tracy/tracy": "^2.3"
+                "nette/tester": "^2.4",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.9"
             },
             "type": "library",
             "extra": {
@@ -1415,9 +1422,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/di/issues",
-                "source": "https://github.com/nette/di/tree/v3.1.0"
+                "source": "https://github.com/nette/di/tree/v3.1.1"
             },
-            "time": "2022-12-14T11:19:09+00:00"
+            "time": "2023-01-16T03:38:02+00:00"
         },
         {
             "name": "nette/finder",

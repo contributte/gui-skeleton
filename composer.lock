@@ -214,21 +214,21 @@
         },
         {
             "name": "contributte/di",
-            "version": "v0.5.4",
+            "version": "v0.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/di.git",
-                "reference": "aea13b32567b9f01dc3acc1752c594e32286565f"
+                "reference": "2857d07b15c8d0136038f4daa6930c42491a6f6a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/di/zipball/aea13b32567b9f01dc3acc1752c594e32286565f",
-                "reference": "aea13b32567b9f01dc3acc1752c594e32286565f",
+                "url": "https://api.github.com/repos/contributte/di/zipball/2857d07b15c8d0136038f4daa6930c42491a6f6a",
+                "reference": "2857d07b15c8d0136038f4daa6930c42491a6f6a",
                 "shasum": ""
             },
             "require": {
                 "nette/di": "^3.1.0",
-                "nette/utils": "^3.2.8",
+                "nette/utils": "^3.2.8 || ^4.0",
                 "php": ">=7.2"
             },
             "conflict": {
@@ -236,7 +236,7 @@
             },
             "require-dev": {
                 "nette/bootstrap": "^3.1.4",
-                "nette/robot-loader": "^3.4.2",
+                "nette/robot-loader": "^3.4.2 || ^4.0",
                 "ninjify/nunjuck": "^0.4",
                 "ninjify/qa": "^0.13",
                 "phpstan/phpstan": "^1.9.11",
@@ -274,7 +274,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/di/issues",
-                "source": "https://github.com/contributte/di/tree/v0.5.4"
+                "source": "https://github.com/contributte/di/tree/v0.5.5"
             },
             "funding": [
                 {
@@ -286,7 +286,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-01-12T18:43:56+00:00"
+            "time": "2023-02-21T08:24:32+00:00"
         },
         {
             "name": "contributte/forms",

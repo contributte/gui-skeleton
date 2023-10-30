@@ -10,12 +10,12 @@ use Nette\Application\UI\Form;
 final class HomepagePresenter extends BasePresenter
 {
 
-	/** @var IApplicationFormFactory */
-	private $formFactory;
+	private IApplicationFormFactory $formFactory;
 
 	public function __construct(IApplicationFormFactory $formFactory)
 	{
 		parent::__construct();
+
 		$this->formFactory = $formFactory;
 	}
 
@@ -27,11 +27,12 @@ final class HomepagePresenter extends BasePresenter
 		$form->addText('test', 'Test');
 
 		//$form->addReCaptcha('recaptcha', $label = 'Captcha', $required = TRUE, $message = 'Are you bot?');
+		// @phpstan-ignore-next-line
 		$form->addReCaptcha('recaptcha', 'Captcha', true, 'Are you bot?');
 
 		$form->addSubmit('send', 'Send');
 
-		$form->onSuccess[] = function (Form $form) {
+		$form->onSuccess[] = function (Form $form): void {
 			dump($form->getValues());
 			bdump($form->getValues());
 		};
@@ -50,6 +51,8 @@ final class HomepagePresenter extends BasePresenter
 			->addCondition(Form::EQUAL, false)
 			->toggle('recaptcha');
 		//$form->addReCaptcha('recaptcha', $label = 'Captcha', $required = TRUE, $message = 'Are you bot?');
+
+		// @phpstan-ignore-next-line
 		$form->addReCaptcha('recaptcha', 'Captcha', false)
 			->setOption('id', 'recaptcha')
 			->addConditionOn($form['registered'], Form::EQUAL, false)
@@ -57,7 +60,7 @@ final class HomepagePresenter extends BasePresenter
 
 		$form->addSubmit('send', 'Send');
 
-		$form->onSuccess[] = function (Form $form) {
+		$form->onSuccess[] = function (Form $form): void {
 			dump($form->getValues());
 			bdump($form->getValues());
 		};
@@ -73,12 +76,13 @@ final class HomepagePresenter extends BasePresenter
 		$form->addText('test', 'Test');
 
 		//$form->addInvisibleReCaptcha('recaptcha', $required = TRUE, $message = 'Are you bot?');
+		// @phpstan-ignore-next-line
 		$form->addInvisibleReCaptcha('recaptcha', $required = false)
 			->setMessage('Are you bot?');
 
 		$form->addSubmit('send', 'Send');
 
-		$form->onSuccess[] = function (Form $form) {
+		$form->onSuccess[] = function (Form $form): void {
 			dump($form->getValues());
 			bdump($form->getValues());
 		};

@@ -4,16 +4,13 @@ namespace App\FormsWizardModule\Presenters;
 
 use App\Presenters\BasePresenter;
 use Contributte\FormWizard\Wizard;
+use Nette\DI\Attributes\Inject;
 
 final class HomepagePresenter extends BasePresenter
 {
 
-	/** @var Wizard @inject */
-	public $wizard;
-
-	public function renderDefault(): void
-	{
-	}
+	#[Inject]
+	public Wizard $wizard;
 
 	public function handleChangeStep(int $step): void
 	{

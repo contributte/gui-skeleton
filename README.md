@@ -24,7 +24,20 @@ Website ðŸš€ <a href="https://contributte.org">contributte.org</a> | Contact ðŸ‘
 
 -----
 
-This is project skeleton for all kind of GUI components for Nette Framework and Contributte family.
+## Goal
+
+Main goal is to provide example of Contributte packages.
+
+Focused on:
+
+- PHP 8.2+
+- `nette/*` packages
+- bunch of `contributte/*` packages
+- codestyle checking via **CodeSniffer** and `contributte/qa`
+- static analysing via **phpstan** and `contributte/phpstan`
+- unit / integration tests via **Nette Tester** and `contributte/tester`
+
+You can try it out yourself either by running it with docker, or more easily with docker-compose.
 
 ## Demo
 

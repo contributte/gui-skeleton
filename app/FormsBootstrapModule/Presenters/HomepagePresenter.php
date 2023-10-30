@@ -6,25 +6,19 @@ use App\Presenters\BasePresenter;
 use Contributte\FormsBootstrap\BootstrapForm;
 use Contributte\FormsBootstrap\BootstrapRenderer;
 use Contributte\FormsBootstrap\Enums\DateTimeFormat;
+use Nette\Application\Attributes\Persistent;
 
 final class HomepagePresenter extends BasePresenter
 {
 
-	/**
-	 * @var int
-	 * @persistent
-	 */
-	public $mode = 0;
-
-	public function renderDefault(): void
-	{
-	}
+	#[Persistent]
+	public int $mode = 0;
 
 	protected function createComponentExampleForm(): BootstrapForm
 	{
 		$form = new BootstrapForm();
 		$form->setHtmlAttribute('novalidate');
-		$form->setRenderer(new BootstrapRenderer((int) $this->mode));
+		$form->setRenderer(new BootstrapRenderer($this->mode));
 		$form->addText('name', 'Name')->setRequired();
 		$form->addEmail('email', 'Email')->setRequired();
 		$form->addDateTime('birthdate', 'Birth date')->setFormat(DateTimeFormat::D_DMY_DOTS);
@@ -42,6 +36,7 @@ final class HomepagePresenter extends BasePresenter
 		$submitCell->addSubmit('submit', 'Submit')->setBtnClass('btn-success');
 		$submitCell->addSubmit('random', 'Do random stuff')->setBtnClass('btn-secondary');
 		$submitCell->addSubmit('save', 'Save for later')->setBtnClass('btn-info');
+
 		return $form;
 	}
 

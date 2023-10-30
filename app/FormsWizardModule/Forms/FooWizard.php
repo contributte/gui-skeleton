@@ -16,6 +16,16 @@ class FooWizard extends Wizard
 		3 => 'Email',
 	];
 
+	/**
+	 * @return array<string, mixed>
+	 */
+	public function getStepData(int $step): array
+	{
+		return [
+			'name' => $this->stepNames[$step],
+		];
+	}
+
 	protected function finish(): void
 	{
 		$values = $this->getValues();
@@ -24,22 +34,13 @@ class FooWizard extends Wizard
 
 	protected function startup(): void
 	{
-		$this->skipStepIf(2, function (array $values): bool {
-			return isset($values[1]) && $values[1]['skip'] === true;
-		});
-		$this->setDefaultValues(2, function (Form $form, array $values) {
+		$this->skipStepIf(2, fn (array $values): bool => isset($values[1]) && $values[1]['skip'] === true);
+		$this->setDefaultValues(2, function (Form $form, array $values): void {
 			$data = [
 				'username' => 'john_doe',
 			];
 			$form->setDefaults($data);
 		});
-	}
-
-	public function getStepData(int $step): array
-	{
-		return [
-			'name' => $this->stepNames[$step],
-		];
 	}
 
 	protected function createStep1(): Form

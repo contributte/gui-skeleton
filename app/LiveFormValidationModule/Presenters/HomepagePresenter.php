@@ -10,12 +10,12 @@ use Nette\Application\UI\Form;
 final class HomepagePresenter extends BasePresenter
 {
 
-	/** @var IApplicationFormFactory */
-	private $formFactory;
+	private IApplicationFormFactory $formFactory;
 
 	public function __construct(IApplicationFormFactory $formFactory)
 	{
 		parent::__construct();
+
 		$this->formFactory = $formFactory;
 	}
 
@@ -37,7 +37,7 @@ final class HomepagePresenter extends BasePresenter
 
 		$form->addSubmit('signup', 'Sign up');
 
-		$form->onSuccess[] = function (Form $form) {
+		$form->onSuccess[] = function (Form $form): void {
 			dump($form->getValues());
 			bdump($form->getValues());
 		};

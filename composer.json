@@ -25,7 +25,7 @@
     "contributte/utils": "^0.6",
     "contributte/latte": "^0.6",
     "contributte/tracy": "^0.6",
-    "contributte/recaptcha": "^3.4"
+    "contributte/recaptcha": "^4.0"
   },
   "require-dev": {
     "contributte/qa": "^0.4",

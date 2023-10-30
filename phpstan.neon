@@ -1,17 +1,16 @@
 includes:
-	- vendor/phpstan/phpstan-nette/extension.neon
-	- vendor/phpstan/phpstan-nette/rules.neon
+	- vendor/contributte/phpstan/phpstan.neon
 
 parameters:
 	level: 9
+	phpVersion: 80200
 
-	scanDirectories:
-		- app
+	tmpDir: %currentWorkingDirectory%/var/tmp/phpstan
 
 	fileExtensions:
 		- php
+		- phpt
 
-	ignoreErrors:
-		- '#Call to an undefined method Nette\\Application\\UI\\Form::addReCaptcha\(\)#'
-		- '#Call to an undefined method Nette\\Application\\UI\\Form::addInvisibleReCaptcha\(\)#'
-
+	paths:
+		- app
+		- bin

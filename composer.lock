@@ -380,16 +380,16 @@
         },
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.6",
+            "version": "v0.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "4fe2280dac47b22cfb5e16c9f937c103fa592268"
+                "reference": "0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/4fe2280dac47b22cfb5e16c9f937c103fa592268",
-                "reference": "4fe2280dac47b22cfb5e16c9f937c103fa592268",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0",
+                "reference": "0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0",
                 "shasum": ""
             },
             "require": {
@@ -436,7 +436,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/forms-bootstrap/issues",
-                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.6"
+                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.6.1"
             },
             "funding": [
                 {
@@ -448,7 +448,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-01-18T10:15:27+00:00"
+            "time": "2024-02-11T20:57:55+00:00"
         },
         {
             "name": "contributte/forms-wizard",
@@ -1316,31 +1316,31 @@
         },
         {
             "name": "nette/component-model",
-            "version": "v3.0.3",
+            "version": "v3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/component-model.git",
-                "reference": "9d97c0e1916bbf8e306283ab187834501fd4b1f5"
+                "reference": "4e0946a788b4ac42ea903b761c693ec7dd083a69"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/component-model/zipball/9d97c0e1916bbf8e306283ab187834501fd4b1f5",
-                "reference": "9d97c0e1916bbf8e306283ab187834501fd4b1f5",
+                "url": "https://api.github.com/repos/nette/component-model/zipball/4e0946a788b4ac42ea903b761c693ec7dd083a69",
+                "reference": "4e0946a788b4ac42ea903b761c693ec7dd083a69",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^2.5 || ^3.0 || ~4.0.0",
-                "php": ">=7.1"
+                "nette/utils": "^4.0",
+                "php": "8.1 - 8.3"
             },
             "require-dev": {
-                "nette/tester": "^2.0",
-                "phpstan/phpstan": "^0.12",
-                "tracy/tracy": "^2.3"
+                "nette/tester": "^2.5",
+                "phpstan/phpstan": "^1.0",
+                "tracy/tracy": "^2.9"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.0-dev"
+                    "dev-master": "3.1-dev"
                 }
             },
             "autoload": {
@@ -1372,9 +1372,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/component-model/issues",
-                "source": "https://github.com/nette/component-model/tree/v3.0.3"
+                "source": "https://github.com/nette/component-model/tree/v3.1.0"
             },
-            "time": "2023-01-09T20:16:05+00:00"
+            "time": "2024-02-08T20:25:40+00:00"
         },
         {
             "name": "nette/di",
@@ -1577,21 +1577,21 @@
         },
         {
             "name": "nette/http",
-            "version": "v3.2.3",
+            "version": "v3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/http.git",
-                "reference": "54d79711ff3a8dfd86201e3bdbdd6972177ea20b"
+                "reference": "c779293fb79e6d2a16d474cd19dce866615f3b9c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/http/zipball/54d79711ff3a8dfd86201e3bdbdd6972177ea20b",
-                "reference": "54d79711ff3a8dfd86201e3bdbdd6972177ea20b",
+                "url": "https://api.github.com/repos/nette/http/zipball/c779293fb79e6d2a16d474cd19dce866615f3b9c",
+                "reference": "c779293fb79e6d2a16d474cd19dce866615f3b9c",
                 "shasum": ""
             },
             "require": {
-                "nette/utils": "^3.2.1 || ~4.0.0",
-                "php": "7.2 - 8.3"
+                "nette/utils": "^4.0.4",
+                "php": "8.1 - 8.3"
             },
             "conflict": {
                 "nette/di": "<3.0.3",
@@ -1605,12 +1605,15 @@
                 "tracy/tracy": "^2.8"
             },
             "suggest": {
-                "ext-fileinfo": "to detect type of uploaded files"
+                "ext-fileinfo": "to detect MIME type of uploaded files by Nette\\Http\\FileUpload",
+                "ext-gd": "to use image function in Nette\\Http\\FileUpload",
+                "ext-intl": "to support punycode by Nette\\Http\\Url",
+                "ext-session": "to use Nette\\Http\\Session"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "3.2-dev"
+                    "dev-master": "3.3-dev"
                 }
             },
             "autoload": {
@@ -1649,9 +1652,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/http/issues",
-                "source": "https://github.com/nette/http/tree/v3.2.3"
+                "source": "https://github.com/nette/http/tree/v3.3.0"
             },
-            "time": "2023-11-02T02:43:54+00:00"
+            "time": "2024-01-30T18:16:20+00:00"
         },
         {
             "name": "nette/neon",

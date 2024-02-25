@@ -2,7 +2,7 @@
 
 <p align=center>
   <a href="https://github.com/contributte/gui-skeleton/actions"><img src="https://badgen.net/github/checks/contributte/gui-skeleton/master"></a>
-  <a href="https://coveralls.io/r/contributte/gui-skeleton"><img src="https://badgen.net/coveralls/c/github/contributte/gui-skeleton"></a>
+  <a href="https://codecov.io/gh/contributte/gui-skeleton"><img src="https://badgen.net/codecov/c/github/contributte/gui-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/gui-skeleton"><img src="https://badgen.net/packagist/dm/contributte/gui-skeleton"></a>
   <a href="https://packagist.org/packages/contributte/gui-skeleton"><img src="https://badgen.net/packagist/v/contributte/gui-skeleton"></a>
 </p>

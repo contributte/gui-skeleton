@@ -1,18 +1,19 @@
 name: "Coverage"
 
 on:
-  pull_request:
+    pull_request:
+    workflow_dispatch:
 
-  push:
-    branches: ["*"]
+    push:
+        branches: [ "*" ]
 
-  schedule:
-    - cron: "0 8 * * 1"
+    schedule:
+        -   cron: "0 8 * * 1"
 
 jobs:
-  coverage:
-    name: "Phpunit"
-    uses: contributte/.github/.github/workflows/phpunit-coverage.yml@v1
-    with:
-      php: "8.2"
-      make: "init coverage"
+    coverage:
+        name: "Phpunit"
+        uses: contributte/.github/.github/workflows/phpunit-coverage.yml@master
+        with:
+            php: "8.2"
+            make: "init coverage"

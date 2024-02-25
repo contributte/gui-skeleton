@@ -1,2 +1,16 @@
-app/config/local.neon
-vendor
+# IDE
+/.idea
+
+# Composer
+/vendor
+
+# Nette
+/app/config/local.neon
+
+# Tests
+/tests/tmp
+/coverage.*
+/tests/**/*.log
+/tests/**/*.html
+/tests/**/*.expected
+/tests/**/*.actual

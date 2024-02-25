@@ -13,4 +13,5 @@ parameters:
 
 	paths:
 		- app
-		- bin
+		- tests/Cases
+		- tests/Toolkit

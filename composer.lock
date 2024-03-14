@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b571d8318423d15d093f643f9003efc8",
+    "content-hash": "a4958e521c542656a81b9c272e4344fd",
     "packages": [
         {
             "name": "contributte/application",
@@ -380,21 +380,21 @@
         },
         {
             "name": "contributte/forms-bootstrap",
-            "version": "v0.6.1",
+            "version": "v0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/forms-bootstrap.git",
-                "reference": "0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0"
+                "reference": "3744a2434bc661e340b01b60a6767832f48283ab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0",
-                "reference": "0fcc668a8dd8d06e6fc6eede9397ecbf235f3cd0",
+                "url": "https://api.github.com/repos/contributte/forms-bootstrap/zipball/3744a2434bc661e340b01b60a6767832f48283ab",
+                "reference": "3744a2434bc661e340b01b60a6767832f48283ab",
                 "shasum": ""
             },
             "require": {
                 "nette/application": "^3.0",
-                "nette/forms": "3.1.12",
+                "nette/forms": "3.1.14",
                 "php": ">=8.1"
             },
             "require-dev": {
@@ -408,7 +408,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6.x-dev"
+                    "dev-master": "0.7.x-dev"
                 }
             },
             "autoload": {
@@ -436,7 +436,7 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/forms-bootstrap/issues",
-                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.6.1"
+                "source": "https://github.com/contributte/forms-bootstrap/tree/v0.7"
             },
             "funding": [
                 {
@@ -448,7 +448,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-11T20:57:55+00:00"
+            "time": "2024-03-13T08:17:31+00:00"
         },
         {
             "name": "contributte/forms-wizard",

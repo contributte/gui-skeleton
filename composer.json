@@ -19,7 +19,7 @@
     "contributte/cache": "^0.6",
     "contributte/di": "^0.5",
     "contributte/forms": "^0.6",
-    "contributte/forms-bootstrap": "^0.6.1",
+    "contributte/forms-bootstrap": "^0.7",
     "contributte/forms-wizard": "^4.0.0",
     "contributte/http": "^0.4",
     "contributte/security": "^0.5",

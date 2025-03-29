@@ -18,64 +18,74 @@
 Website 🚀 <a href="https://contributte.org">contributte.org</a> | Contact 👨🏻‍💻 <a href="https://f3l1x.io">f3l1x.io</a> | Twitter 🐦 <a href="https://twitter.com/contributte">@contributte</a>
 </p>
 
+## Overview
+
+This is a comprehensive example project showcasing the integration of various Contributte packages. It serves as a reference implementation for developers looking to build modern PHP applications using the Nette framework and Contributte ecosystem.
+
+### Key Features
+
+- Built with PHP 8.2+
+- Powered by Nette framework packages
+- Integrated Contributte packages
+- Comprehensive code quality tools:
+  - CodeSniffer for code style checking
+  - PHPStan for static analysis
+  - Nette Tester for unit and integration testing
+
+## Live Demo
+
 <p align=center>
     <img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fgui-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
 </p>
 
------
+Visit the live demo at: https://examples.contributte.org/gui-skeleton/
 
-## Goal
+## Getting Started
 
-Main goal is to provide example of Contributte packages.
+### Non-Docker Installation
 
-Focused on:
-
-- PHP 8.2+
-- `nette/*` packages
-- bunch of `contributte/*` packages
-- codestyle checking via **CodeSniffer** and `contributte/qa`
-- static analysing via **phpstan** and `contributte/phpstan`
-- unit / integration tests via **Nette Tester** and `contributte/tester`
-
-You can try it out yourself either by running it with docker, or more easily with docker-compose.
-
-## Demo
-
-https://examples.contributte.org/gui-skeleton/
-
-## Installation
-
-To install latest version of `contributte/gui-skeleton` use [Composer](https://getcomposer.org).
-
-```
-composer create-project -s dev contributte/gui-skeleton acme
-```
-
-### Install using [docker](https://github.com/docker/docker/)
-
-1) At first, clone this repository.
-
-   ```
-   git clone https://github.com/contributte/gui-skeleton.git
+1. Create a new project:
+   ```bash
+   composer create-project -s dev contributte/gui-skeleton acme
    ```
 
-2) Run docker via docker compose.
-
+2. Install dependencies:
+   ```bash
+   composer install
    ```
-   docker-compose up
+
+3. Start PHP development server:
+   ```bash
+   make dev
    ```
 
-3) Open http://0.0.0.0:8000 and enjoy!
+4. Access the application at http://0.0.0.0:8080
 
-If you need enter into container (such as `composer update`) run command `docker-compose run web bash`.
+### Docker Installation
 
-### Composer packages
+1. Create a new project:
+   ```bash
+   composer create-project -s dev contributte/gui-skeleton acme
+   ```
 
-Take a detailed look :eyes: at:
-- [contributte/forms-bootstrap](https://contributte.org/packages/contributte/forms-bootstrap.html)
-- [contributte/forms-wizard](https://contributte.org/packages/contributte/forms-wizard.html)
-- [contributte/live-form-validation](https://contributte.org/packages/contributte/live-form-validation.html)
-- [contributte/reCAPTCHAp](https://contributte.org/packages/contributte/reCAPTCHA.html)
+2. Install dependencies:
+   ```bash
+   composer install
+   ```
+
+3. Start the application using Docker Compose:
+
+    ```bash
+    docker compose up
+    ```
+
+    To access the container for development tasks (e.g., `composer update`):
+
+    ```bash
+    docker compose run web bash
+    ```
+
+4. Access the application at http://0.0.0.0:8080
 
 ## Development
 
@@ -85,9 +95,6 @@ This package is currently maintaining by these authors.
 
 <a href="https://github.com/f3l1x">
     <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=80">
-</a>
-<a href="https://github.com/petrparolek">
-  <img width="80" height="80" src="https://avatars2.githubusercontent.com/u/6066243?v=3&s=80">
 </a>
 
 -----

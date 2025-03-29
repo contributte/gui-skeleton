@@ -1,11 +1,9 @@
-version: '3.3'
-
 services:
   web:
-    image: dockette/web:php-80
+    image: dockette/web:php-82
     volumes:
       - ./:/srv
     ports:
-      - 80:80
+      - 8080:80
     environment:
       - NETTE_DEBUG=1

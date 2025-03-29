@@ -29,11 +29,11 @@ final class HomepagePresenter extends BasePresenter
 
 		$form->addPassword('password', 'Password:')
 			->setRequired()
-			->addRule(Form::MIN_LENGTH, 'Password must bea at least %d characters long', 6);
+			->addRule(Form::MinLength, 'Password must bea at least %d characters long', 6);
 
 		$form->addPassword('passwordVerify', 'Password again:')
 			->setRequired('Please set the password again for check')
-			->addRule(Form::EQUAL, 'Passwords are not equal', $form['password']);
+			->addRule(Form::Equal, 'Passwords are not equal', $form['password']);
 
 		$form->addSubmit('signup', 'Sign up');
 

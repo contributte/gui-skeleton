@@ -6,8 +6,8 @@ use App\Bootstrap;
 use Contributte\Tester\Toolkit;
 use Nette\Bridges\ApplicationLatte\Template;
 use Nette\Bridges\ApplicationLatte\TemplateFactory;
+use Nette\Utils\FileInfo;
 use Nette\Utils\Finder;
-use SplFileInfo;
 use Tester\Assert;
 use Tests\Toolkit\Tests;
 use Throwable;
@@ -25,7 +25,7 @@ Toolkit::test(function (): void {
 	$finder = Finder::findFiles('*.latte')->from(Tests::APP_PATH);
 
 	try {
-		/** @var SplFileInfo $file */
+		/** @var FileInfo $file */
 		foreach ($finder as $file) {
 			$template->getLatte()->warmupCache($file->getRealPath());
 		}

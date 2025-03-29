@@ -48,14 +48,14 @@ final class HomepagePresenter extends BasePresenter
 		$form->addText('test', 'Test');
 
 		$form->addCheckbox('registered', 'I already have an account.')
-			->addCondition(Form::EQUAL, false)
+			->addCondition(Form::Equal, false)
 			->toggle('recaptcha');
 		//$form->addReCaptcha('recaptcha', $label = 'Captcha', $required = TRUE, $message = 'Are you bot?');
 
 		// @phpstan-ignore-next-line
 		$form->addReCaptcha('recaptcha', 'Captcha', false)
 			->setOption('id', 'recaptcha')
-			->addConditionOn($form['registered'], Form::EQUAL, false)
+			->addConditionOn($form['registered'], Form::Equal, false)
 			->setRequired();
 
 		$form->addSubmit('send', 'Send');

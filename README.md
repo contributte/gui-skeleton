@@ -32,7 +32,7 @@ This is a comprehensive example project showcasing the integration of various Co
   - PHPStan for static analysis
   - Nette Tester for unit and integration testing
 
-## Live Demo
+## Demo
 
 <p align=center>
     <img src="https://api.microlink.io?url=https%3A%2F%2Fexamples.contributte.org%2Fgui-skeleton%2F&overlay.browser=light&screenshot=true&meta=false&embed=screenshot.url"></img>
@@ -74,7 +74,6 @@ Visit the live demo at: https://examples.contributte.org/gui-skeleton/
    ```
 
 3. Start the application using Docker Compose:
-
     ```bash
     docker compose up
     ```

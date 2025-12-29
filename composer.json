@@ -16,7 +16,7 @@
 
     "contributte/application": "^0.6",
     "contributte/bootstrap": "^0.6",
-    "contributte/cache": "^0.6",
+    "contributte/cache": "^0.7",
     "contributte/di": "^0.6.0",
     "contributte/forms": "^0.6",
     "contributte/forms-bootstrap": "^0.8.3",

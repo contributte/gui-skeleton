@@ -24,7 +24,7 @@
     "contributte/http": "^0.4.1",
     "contributte/security": "^0.5",
     "contributte/utils": "^0.7.0",
-    "contributte/latte": "^0.6",
+    "contributte/latte": "^0.7",
     "contributte/tracy": "^0.6",
     "contributte/recaptcha": "^4.0.2"
   },

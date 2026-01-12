@@ -15,7 +15,7 @@
     "php": ">=8.2",
 
     "contributte/application": "^0.6",
-    "contributte/bootstrap": "^0.6",
+    "contributte/bootstrap": "^0.7",
     "contributte/cache": "^0.7",
     "contributte/di": "^0.6.0",
     "contributte/forms": "^0.6",

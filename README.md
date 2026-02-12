@@ -24,7 +24,7 @@ This is a comprehensive example project showcasing the integration of various Co
 
 ### Key Features
 
-- Built with PHP 8.2+
+- Built with PHP 8.4+
 - Powered by Nette framework packages
 - Integrated Contributte packages
 - Comprehensive code quality tools:

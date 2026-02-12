@@ -12,20 +12,20 @@
   "license": "MIT",
   "type": "project",
   "require": {
-    "php": ">=8.2",
+    "php": ">=8.4",
 
     "contributte/application": "^0.6",
-    "contributte/bootstrap": "^0.6",
+    "contributte/bootstrap": "^0.7",
     "contributte/cache": "^0.7",
     "contributte/di": "^0.6.0",
-    "contributte/forms": "^0.6",
+    "contributte/forms": "^0.7@dev",
     "contributte/forms-bootstrap": "^0.8.3",
     "contributte/forms-wizard": "^4.0.0",
-    "contributte/http": "^0.4.1",
+    "contributte/http": "^0.5",
     "contributte/security": "^0.5",
     "contributte/utils": "^0.7.0",
-    "contributte/latte": "^0.6",
-    "contributte/tracy": "^0.6",
+    "contributte/latte": "^0.7",
+    "contributte/tracy": "^0.7",
     "contributte/recaptcha": "^4.0.2"
   },
   "require-dev": {
